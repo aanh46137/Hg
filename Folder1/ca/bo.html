@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Role</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <style>
+
+        body{
+            background: #eef1f5;
+        }
+
+        .role-box{
+
+            width: 900px;
+
+            background: white;
+
+            margin: 30px auto;
+
+            padding: 40px;
+
+            border-radius: 20px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="role-box">
+
+    <h1 class="fw-bold mb-4">
+        Cấp quyền người dùng
+    </h1>
+
+    <form>
+
+        <div class="mb-4">
+
+            <label class="form-label">Chọn người dùng</label>
+
+            <select class="form-select form-select-lg">
+
+                <option>-- Chọn người dùng --</option>
+                <option>admin</option>
+                <option>user01</option>
+
+            </select>
+
+        </div>
+
+        <div class="mb-4">
+
+            <label class="form-label">Vai trò</label>
+
+            <select class="form-select form-select-lg">
+
+                <option>Nhân viên</option>
+                <option>Quản trị viên</option>
+
+            </select>
+
+        </div>
+
+        <div class="mb-4">
+
+            <label class="form-label">Quyền hạn</label>
+
+            <div class="form-check">
+
+                <input type="checkbox"
+                       class="form-check-input">
+
+                <label class="form-check-label">
+                    Thêm sản phẩm
+                </label>
+
+            </div>
+
+            <div class="form-check">
+
+                <input type="checkbox"
+                       class="form-check-input">
+
+                <label class="form-check-label">
+                    Sửa sản phẩm
+                </label>
+
+            </div>
+
+            <div class="form-check">
+
+                <input type="checkbox"
+                       class="form-check-input">
+
+                <label class="form-check-label">
+                    Xóa sản phẩm
+                </label>
+
+            </div>
+
+        </div>
+
+        <div class="mb-4">
+
+            <label class="form-label">Trạng thái tài khoản</label>
+
+            <select class="form-select form-select-lg">
+
+                <option>Hoạt động</option>
+                <option>Khóa</option>
+
+            </select>
+
+        </div>
+
+        <div class="text-end">
+
+            <button class="btn btn-secondary btn-lg">
+                Hủy
+            </button>
+
+            <button class="btn btn-primary btn-lg">
+                Lưu quyền
+            </button>
+
+        </div>
+
+    </form>
+
+</div>
+
+</body>
+</html>
