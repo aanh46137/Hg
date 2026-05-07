@@ -1,0 +1,23 @@
+CREATE DATABASE login_db;
+
+
+USE login_db;
+
+CREATE TABLE users(
+
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
+
+    username VARCHAR(100),
+
+    password VARCHAR(100)
+);
+
+
+
+INSERT INTO users(username, password)
+
+VALUES
+
+('admin', 'Admin@123'),
+
+('user01', 'User@123');
