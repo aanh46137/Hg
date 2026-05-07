@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial;
+        }
+
+        body{
+            background: #eef1f5;
+        }
+
+        .container{
+
+            width: 500px;
+
+            background: white;
+
+            margin: 40px auto;
+
+            padding: 40px;
+
+            border-radius: 20px;
+
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h1{
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .sub-title{
+            text-align: center;
+            color: gray;
+            margin-bottom: 30px;
+        }
+
+        .form-group{
+            margin-bottom: 25px;
+        }
+
+        label{
+            display: block;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .input-box{
+
+            display: flex;
+
+            align-items: center;
+
+            border: 1px solid #ddd;
+
+            border-radius: 10px;
+
+            overflow: hidden;
+
+            background: #f5f6f8;
+        }
+
+        .input-box i{
+            padding: 18px;
+        }
+
+        .input-box input{
+
+            width: 100%;
+
+            border: none;
+
+            outline: none;
+
+            background: transparent;
+
+            padding: 18px;
+
+            font-size: 18px;
+        }
+
+        .forgot{
+            text-align: right;
+            margin-bottom: 25px;
+        }
+
+        .btn-login{
+
+            width: 100%;
+
+            padding: 15px;
+
+            border: none;
+
+            border-radius: 10px;
+
+            background: #2f6df6;
+
+            color: white;
+
+            font-size: 22px;
+
+            cursor: pointer;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Đăng nhập</h1>
+
+    <p class="sub-title">
+        Cửa hàng vui vẻ xin chào
+    </p>
+
+    <form>
+
+        <div class="form-group">
+
+            <label>Tên đăng nhập</label>
+
+            <div class="input-box">
+
+                <i class="fa-regular fa-user"></i>
+
+                <input type="text"
+                       placeholder="Nhập tên đăng nhập">
+
+            </div>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Mật khẩu</label>
+
+            <div class="input-box">
+
+                <i class="fa-solid fa-lock"></i>
+
+                <input type="password"
+                       placeholder="Nhập mật khẩu">
+
+                <i class="fa-regular fa-eye"></i>
+
+            </div>
+
+        </div>
+
+        <div class="forgot">
+            <a href="#">Quên mật khẩu?</a>
+        </div>
+
+        <button class="btn-login">
+            Đăng nhập
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+</html>

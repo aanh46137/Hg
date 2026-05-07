@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Role</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial;
+        }
+
+        body{
+            background: #eef1f5;
+        }
+
+        .container{
+
+            width: 900px;
+
+            background: white;
+
+            margin: 30px auto;
+
+            padding: 40px;
+
+            border-radius: 20px;
+        }
+
+        h1{
+            margin-bottom: 30px;
+        }
+
+        .form-group{
+            margin-bottom: 25px;
+        }
+
+        label{
+
+            display: block;
+
+            margin-bottom: 10px;
+
+            font-size: 22px;
+        }
+
+        select{
+
+            width: 100%;
+
+            padding: 15px;
+
+            border: 1px solid #ccc;
+
+            border-radius: 10px;
+
+            font-size: 18px;
+        }
+
+        .checkbox-group{
+            margin-top: 10px;
+        }
+
+        .checkbox-group div{
+            margin-bottom: 10px;
+        }
+
+        .button-group{
+            text-align: right;
+            margin-top: 30px;
+        }
+
+        button{
+
+            padding: 12px 25px;
+
+            border: none;
+
+            border-radius: 10px;
+
+            font-size: 18px;
+
+            cursor: pointer;
+        }
+
+        .btn-cancel{
+            background: gray;
+            color: white;
+        }
+
+        .btn-save{
+            background: #2f6df6;
+            color: white;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Cấp quyền người dùng</h1>
+
+    <form>
+
+        <div class="form-group">
+
+            <label>Chọn người dùng</label>
+
+            <select>
+
+                <option>-- Chọn người dùng --</option>
+                <option>admin</option>
+
+            </select>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Vai trò</label>
+
+            <select>
+
+                <option>Nhân viên</option>
+                <option>Quản trị viên</option>
+
+            </select>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Quyền hạn</label>
+
+            <div class="checkbox-group">
+
+                <div>
+                    <input type="checkbox"> Thêm sản phẩm
+                </div>
+
+                <div>
+                    <input type="checkbox"> Sửa sản phẩm
+                </div>
+
+                <div>
+                    <input type="checkbox"> Xóa sản phẩm
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Trạng thái tài khoản</label>
+
+            <select>
+
+                <option>Hoạt động</option>
+                <option>Khóa</option>
+
+            </select>
+
+        </div>
+
+        <div class="button-group">
+
+            <button class="btn-cancel">
+                Hủy
+            </button>
+
+            <button class="btn-save">
+                Lưu quyền
+            </button>
+
+        </div>
+
+    </form>
+
+</div>
+
+</body>
+</html>
